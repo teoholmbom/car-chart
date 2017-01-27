@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="chartApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Chart</title>
+</head>
+<body ng-controller="mainController">
+
+    <canvas id="bar" class="chart chart-bar" chart-options="options"
+        chart-data="data" chart-labels="labels" chart-series="series">
+    </canvas>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+    <script src="static/js/lib/angular.js"></script>
+    <script src="static/js/lib/angular-chart.min.js"></script>
+    <!-- Angular application -->
+    <script src="static/js/app.js"></script>
+    <!-- Anuglar controller(s) -->
+    <script src="static/js/controller/main.js"></script>
+</body>
+</html>
